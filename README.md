@@ -22,3 +22,17 @@ $ curl -fsSL https://get.docker.com/rootless >> get_docker.sh
 $ bash get_docker.sh
 ```
 一切顺利的话会看得到如下屏幕输出
+
+
+TODO  
+
+
+### 2.常用命令
+docker ps -a
+docker start a9d4bd5602e6
+docker stop a9d4bd5602e6
+
+https://www.cnblogs.com/linjiqin/p/8608975.html
+
+$ docker kill a9d4bd5602e6
+Error response from daemon: Cannot kill container: a9d4bd5602e6: Container a9d4bd5602e64942674a3f466501861c9dd8b63e2a5f1c774e37a007af56d688 is not running
