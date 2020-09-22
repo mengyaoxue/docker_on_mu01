@@ -17,3 +17,8 @@ $ curl -fsSL https://get.docker.com/rootless >> get_docker.sh
         STATIC_RELEASE_URL="https://mirrors.ustc.edu.cn/docker-ce/linux/static/$CHANNEL/$(uname -m)/docker-${STABLE_LATEST}.tgz"
         STATIC_RELEASE_ROOTLESS_URL="https://mirrors.ustc.edu.cn/docker-ce/linux/static/$CHANNEL/$(uname -m)/docker-rootless-extras-${STABLE_LATEST}.tgz"
 ```
+运行
+```
+$ bash get_docker.sh
+```
+一切顺利的话会看得到如下屏幕输出
