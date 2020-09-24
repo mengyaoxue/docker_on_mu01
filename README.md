@@ -9,7 +9,7 @@
 ```
 $ curl -fsSL https://get.docker.com/rootless >> get_docker.sh
 ```
-由于现场连外网速度非常慢，故需要修改生成的 get_docker.sh 将下载路径改为国内镜像地址（这里以科大镜像源为例）。  
+由于现场集群连国外网受限速度非常慢，故需要修改生成的 get_docker.sh 将下载路径改为国内镜像地址（这里以科大镜像源为例）。  
 将生成的 `get_docker.sh` 中
 ```
         STATIC_RELEASE_URL="https://download.docker.com/linux/static/$CHANNEL/$(uname -m)/docker-${STABLE_LATEST}.tgz"
