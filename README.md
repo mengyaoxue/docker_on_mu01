@@ -30,7 +30,14 @@ $ bash get_docker.sh
 TODO  
 
 
-### 2.常用命令
+### 2.运行
+首先需要交互式调用一计算节点，然后启动docker服务
+```
+dockerd-rootless.sh --experimental --storage-driver vfs
+```
+再新开一个交互式计算节点，在里面使用docker
+
+常用命令
 ```
 docker ps -a
 docker start a9d4bd5602e6
