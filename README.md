@@ -54,4 +54,12 @@ docker image load -i /home/miaocc/pulsar-TIMING.img
 可参考  
 https://docs.docker.com/engine/reference/commandline/image_load/
 
+### 3.TODO
+run in tmux or screen?  
+https://zhuanlan.zhihu.com/p/68185484  
+https://www.cnblogs.com/mchina/archive/2013/01/30/2880680.html  
+https://blog.csdn.net/hongchangfirst/article/details/37818947  
+
+PINT not TEMPO3
+https://nanograv-pint.readthedocs.io/en/latest/
 
