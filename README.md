@@ -47,5 +47,11 @@ Error response from daemon: Cannot kill container: a9d4bd5602e6: Container a9d4b
 ```
 https://www.cnblogs.com/linjiqin/p/8608975.html
 
-`docker image load` 可参考  
+`docker image load` 
+```
+docker image load -i /home/miaocc/pulsar-TIMING.img
+```
+可参考  
 https://docs.docker.com/engine/reference/commandline/image_load/
+
+
