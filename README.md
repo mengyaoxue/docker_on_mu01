@@ -35,7 +35,12 @@ TODO
 ```
 dockerd-rootless.sh --experimental --storage-driver vfs
 ```
-再新开一个交互式计算节点，在里面使用docker
+再新开一个交互式计算节点，在里面使用docker  
+可尝试
+```
+docker run hello-world
+```
+
 
 常用命令
 ```
@@ -51,12 +56,24 @@ docker images
 ```
 https://www.cnblogs.com/linjiqin/p/8608975.html
 
-`docker image load` 
+docker image load   
+(可参考 https://docs.docker.com/engine/reference/commandline/image_load/)
+
+具体所使用的命令:
 ```
 docker image load -i /home/miaocc/pulsar-TIMING.img
 ```
-可参考  
-https://docs.docker.com/engine/reference/commandline/image_load/
+经过 **6!个!小!时!** 的镜像加载(MD从下午3点半一直搞到晚上9点半),终于显示  
+```
+Loaded image: fast_psr:timing
+```
+然后
+```
+docker images
+```
+的时候就可以看到有列出 fast_psr 了
+
+
 
 ### 3.TODO
 run in tmux or screen?  
