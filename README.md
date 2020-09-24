@@ -1,5 +1,8 @@
 ## 在现场集群安装及运行docker
 在现场集群需使用 docker-rootless  
+并交互式调用一计算节点
+`qsub -I -q cu_slim`
+
 ### 1.安装
 参考 https://docs.docker.com/engine/security/rootless/#install  
 
@@ -28,11 +31,12 @@ TODO
 
 
 ### 2.常用命令
+```
 docker ps -a
 docker start a9d4bd5602e6
 docker stop a9d4bd5602e6
-
+docker kill a9d4bd5602e6  
+Error response from daemon: Cannot kill container: a9d4bd5602e6: Container a9d4bd5602e64942674a3f466501861c9dd8b63e2a5f1c774e37a007af56d688 is not running
+```
 https://www.cnblogs.com/linjiqin/p/8608975.html
 
-$ docker kill a9d4bd5602e6
-Error response from daemon: Cannot kill container: a9d4bd5602e6: Container a9d4bd5602e64942674a3f466501861c9dd8b63e2a5f1c774e37a007af56d688 is not running
