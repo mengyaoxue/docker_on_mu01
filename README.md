@@ -45,6 +45,10 @@ docker stop a9d4bd5602e6
 docker kill a9d4bd5602e6  
 Error response from daemon: Cannot kill container: a9d4bd5602e6: Container a9d4bd5602e64942674a3f466501861c9dd8b63e2a5f1c774e37a007af56d688 is not running
 ```
+
+```
+docker images
+```
 https://www.cnblogs.com/linjiqin/p/8608975.html
 
 `docker image load` 
