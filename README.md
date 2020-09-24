@@ -31,7 +31,7 @@ TODO
 
 
 ### 2.运行
-首先需要交互式调用一计算节点，然后启动docker服务
+首先需要交互式调用一计算节点，然后用以下命令启动docker服务
 ```
 dockerd-rootless.sh --experimental --storage-driver vfs
 ```
@@ -47,3 +47,5 @@ Error response from daemon: Cannot kill container: a9d4bd5602e6: Container a9d4b
 ```
 https://www.cnblogs.com/linjiqin/p/8608975.html
 
+`docker image load` 可参考  
+https://docs.docker.com/engine/reference/commandline/image_load/
