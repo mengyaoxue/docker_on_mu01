@@ -85,7 +85,11 @@ Run Docker-service in tmux
 > tmux ls
 
 临时退出session
->Ctrl+b d
+>Ctrl+b d  
+
+在session中翻页
+>Ctrl+b \[ 
+退出 `q`
 
 横切split pane horizontal
 >Ctrl+b ” (问号的上面，shift+’)
@@ -101,6 +105,7 @@ Run Docker-service in tmux
 
 删除指定session
 >tmux kill-session -t $session_name
+
 
 run in tmux or screen?  
 https://zhuanlan.zhihu.com/p/68185484  
