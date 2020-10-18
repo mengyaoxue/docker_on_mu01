@@ -76,6 +76,32 @@ docker images
 
 
 ### 3.TODO
+Run Docker-service in tmux  
+(https://gist.github.com/henrik/1967800)  
+开启tmux
+> tmux
+
+显示已有tmux列表
+> tmux ls
+
+临时退出session
+>Ctrl+b d
+
+横切split pane horizontal
+>Ctrl+b ” (问号的上面，shift+’)
+
+按顺序在pane之间移动
+>Ctrl+b o
+
+创建并指定session名字
+>tmux new -s $session_name
+
+进入已存在的session
+>tmux a -t $session_name
+
+删除指定session
+>tmux kill-session -t $session_name
+
 run in tmux or screen?  
 https://zhuanlan.zhihu.com/p/68185484  
 https://www.cnblogs.com/mchina/archive/2013/01/30/2880680.html  
