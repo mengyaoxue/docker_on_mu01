@@ -31,7 +31,12 @@ TODO
 
 
 ### 2.运行
-首先需要交互式调用一计算节点，然后用以下命令启动docker服务
+首先需要交互式调用一**计算节点**，
+```
+qsub -I -q cu_slim
+```
+
+然后用以下命令启动docker服务
 ```
 dockerd-rootless.sh --experimental --storage-driver vfs
 ```
@@ -74,43 +79,38 @@ docker images
 的时候就可以看到有列出 fast_psr 了
 
 
+### 3.Run Docker-service in screen  
+(https://www.cnblogs.com/mchina/archive/2013/01/30/2880680.html)  
 
-### 3.Run Docker-service in tmux  
-开启tmux
-> tmux
+(http://www.dayid.org/comp/tm.html)
 
-显示已有tmux列表
-> tmux ls
+开启screen `screen`  
 
-临时退出session
->Ctrl+b d  
+显示已有screen列表 `screen -ls`  
+
+临时退出session `Ctrl+a d`  
 
 在session中翻页
->Ctrl+b \[  
+>Ctrl+a \[  
 
-退出翻页模式: `q`
+退出翻页模式: `Ctrl+c`
 
-横切split pane horizontal
->Ctrl+b ” (问号的上面，shift+’)
-
-按顺序在pane之间移动
->Ctrl+b o
-
-创建并指定session名字
->tmux new -s $session_name
+创建指定名称的session
+>screen -S $session_name
 
 进入已存在的session
->tmux a -t $session_name
+>screen -r $session_name
 
 删除指定session
->tmux kill-session -t $session_name
+>screen -X -S $session_name quit
+
+删除当前session: `Ctrl+a k`  
+
+For dead sessions use: `screen -wipe`
 
 
-run in tmux or screen?  
-https://zhuanlan.zhihu.com/p/68185484  
-https://www.cnblogs.com/mchina/archive/2013/01/30/2880680.html  
-https://blog.csdn.net/hongchangfirst/article/details/37818947  
 
+### TODO
 PINT not TEMPO3
 https://nanograv-pint.readthedocs.io/en/latest/
 
