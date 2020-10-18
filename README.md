@@ -75,9 +75,7 @@ docker images
 
 
 
-### 3.TODO
-Run Docker-service in tmux  
-(https://gist.github.com/henrik/1967800)  
+### 3.Run Docker-service in tmux  
 开启tmux
 > tmux
 
