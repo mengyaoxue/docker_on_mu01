@@ -88,7 +88,8 @@ Run Docker-service in tmux
 >Ctrl+b d  
 
 在session中翻页
->Ctrl+b \[ 
+>Ctrl+b \[  
+
 退出 `q`
 
 横切split pane horizontal
